@@ -1,0 +1,23 @@
+{
+  "name": "imprimante",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gentlhug/imprimante.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gentlhug/imprimante/issues"
+  },
+  "homepage": "https://github.com/Gentlhug/imprimante#readme",
+  "dependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
