@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth box-border">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,71 +9,114 @@
     <link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
     <title>ImpriMante - Service d'impression 3D</title>
 </head>
-<body class="text-green3">
+<body class="text-darkim">
     <header>
-        <nav class="navbar">
-            <a href="index.html">
-                <img src="img/logo_impri-mante_symbole.png" alt="logo ImpriMante">
-            </a>
-            <div class="link-nav">
-                <a href="#home">Accueil</a>
-                <a href="#about">À propos</a>
-                <a href="#service">Nos services</a>
-                <a href="#values">Nos Valeurs</a>
-                <a href="#contact">Contact</a>
+        <nav class="flex flex-wrap items-center justify-between shadow-lg fixed top-0 left-0 w-full py-4 md:py-0 bg-white z-50" id="menu">
+            <div class="flex items-center justify-between w-full p-3 md:w-auto">
+                <a href="index.html">
+                    <img class="w-14 ml-6" src="img/logo_impri-mante_symbole.png" alt="logo ImpriMante">
+                </a>
+                <div id="btnMenu">
+                    <svg
+                        xmlns="<http://www.w3.org/2000/svg>"
+                        id="menu-button"
+                        class="h-6 w-6 cursor-pointer md:hidden block"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"
+                        />
+                    </svg>
+                </div>
+            </div>
+            <div class="hidden w-full md:flex md:items-center md:w-auto" id="list">
+                <div class="flex items-center md:flex-row flex-col p-3 font-clutsy">
+                    <a class="p-3 rounded-md w-32 text-center text-lg transition ease-in-out duration-500 hover:bg-green1" href="#about">À propos</a>
+                    <a class="md:ml-3 ml-0 p-3 rounded-md w-32 text-center text-lg transition ease-in-out duration-500 hover:bg-green1" href="#service">Nos services</a>
+                    <a href="#ai" class="md:ml-3 ml-0 p-3 rounded-md w-32 text-center text-lg transition ease-in-out duration-500 hover:bg-green1">Notre IA</a>
+                    <a class="md:ml-3 ml-0 p-3 rounded-md w-32 text-center text-lg transition ease-in-out duration-500 hover:bg-green1" href="#values">Nos Valeurs</a>
+                    <a class="md:ml-3 ml-0 md:w-auto w-full flex items-center justify-center p-3 bg-green2 rounded-md text-lg" href="#contact">Contactez-moi</a>
+                </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="container mt-7">
-            <img src="img/photo_de_couverture_v2.jpg" alt="" class="img-pres">
-
-            <h1 class="text-3xl font-bold underline font-clutsy">Achetez ce que vous ne trouvez nulle part !</h1>
-        </div>
-        <div class="bg-gd-green-white-1">
-            <div class="container">
-                <div class="section-about" id="about">
-                    <h2 class="font-clutsy">Qui somme-nous ?</h2>
-                    <p class="text-center">
-                        ImpriMante est une entreprise Française de service d'impression 3D. Celle-ci vous permets de concrétiser vos idées !<br>
-                        Nous vous permettons de profiter de la technologie de l'impression 3D pour aquérir un objet <span class="text-important">respectueux de l'environnement</span>, <span class="text-important">personnalisé</span>, et surtout <span class="text-important">fabriqué en France !</span>
-                    </p>
-                    <img class="img-big mt-3 mb-7" src="img/developpement-durable.jpg" alt="">
-                </div>
+        <!-- Home -->
+        <div class="antialiased bg-gradient-to-br from-green1 to-green2">
+            <div class="container mx-auto px-3 py-16">
+                <img src="img/logo_imprimante_v2.png" alt="" class="sm:w-3/4 w-full mx-auto mt-72 mb-32">
+    
+                <h1 class="sm:text-5xl text-2xl font-semibold font-clutsy text-center mb-48">Achetez ce que vous ne trouvez nulle part !</h1>
             </div>
         </div>
-        <div class="bg-white ptb-5">
-            <div class="container">
-                <div class="section-service" id="service">
-                    <h2 class="text-center size-2 mb-3">Ce que nous proposons</h2>
-                    <div class="menu-icon mt-4">
-                        <div class="menu-elmnt">
-                            <img src="img/3d-printer.png" alt="">
-                            <h3 class="text-center mt-3">Service d'impression 3D</h3>
-                            <p class="text-center mt-2">
+
+        <!-- About section -->
+        <div class="container mx-auto px-3 py-20" id="about">
+            <h2 class="font-clutsy text-4xl text-center font-semibold mb-4">Qui somme-nous ?</h2>
+            <p class="text-center font-akaya text-xl">
+                ImpriMante est une entreprise <span class="border-b-4 border-blue-500">Fra</span><span class="border-b-4 border-white">nça</span><span class="border-b-4 border-red-500">ise</span> de service d'impression 3D. Elle vous permets de concrétiser vos idées !<br>
+                Nous vous permettons de profiter de la technologie de l'impression 3D pour aquérir un objet <span class="border-b-4 border-green3">respectueux de l'environnement</span>, <span class="border-b-4 border-green3">personnalisé</span>, et surtout <span class="border-b-4 border-green3">fabriqué en France !</span>
+            </p>
+            <div class="flex my-6">
+                <div class="w-1/3 h-1 bg-blue-500"></div>
+                <div class="w-1/3 h-1 bg-white"></div>
+                <div class="w-1/3 h-1 bg-red-500"></div>
+            </div>
+            <img class="mt-3 w-full mb-7 rounded-xl sm:w-3/4 mx-auto" src="img/3d_objects.jpg" alt="">
+        </div>
+
+        <!-- Service section -->
+        <div class="bg-green1" id="service">
+            <div class="container mx-auto px-3 py-20">
+                <h2 class="text-center text-4xl mb-4 font-clutsy font-semibold">Nos différents services</h2>
+                <div class="flex justify-between flex-col mt-4 sm:flex-row">
+                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg sm:w-1/4 my-2 sm:m-2 transition ease-in-out duration-500 hover:scale-105 hover:shadow-2xl">
+                        <div class="h-1/3 w-full overflow-hidden">
+                            <img src="img/printer.jpg" alt="" class="brightness-75">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">Service d'impression 3D</h3>
+                            <p class="mt-2 text-lg font-akaya">
                                 Vous avez le choix de faire imprimer vos objets sur des imprimantes FDM (filaments plastiques), mais aussi sur des imprimantes SLA (résines) pour profiter d'une meilleure qualité d'impression !
                             </p>
                         </div>
-                        <div class="menu-elmnt">
-                            <img src="img/software.png" alt="">
-                            <h3 class="text-center mt-3">Large catalogue d'objets préconçue prêt à être personnalisé</h3>
-                            <p class="text-center mt-2">
+                    </div>
+                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg sm:w-1/4 my-2 sm:m-2 transition ease-in-out duration-500 hover:scale-105 hover:shadow-2xl">
+                        <div class="h-1/3 w-full overflow-hidden">
+                            <img src="img/e-commerce.png" alt="" class="brightness-75">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">Large catalogue d'objets préconçue prêt à être personnalisé</h3>
+                            <p class="mt-2 text-lg font-akaya">
                                 Vous n'avez pas d'idée précise sur ce que vous voulez commander ? Pas de panique ! <br>
                                 Nous vous proposons un large catalogue d'objets préconçue, ne nécessitant plus que votre touche de personnalisation pour être parfait à vos yeux !
                             </p>
                         </div>
-                        <div class="menu-elmnt">
-                            <img src="img/printed.png" alt="">
-                            <h3 class="text-center mt-3">ProtoMante - Le service d'impression 3D pour les prototypes</h3>
-                            <p class="text-center mt-2">
+                    </div>
+                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg sm:w-1/4 my-2 sm:m-2 transition ease-in-out duration-500 hover:scale-105 hover:shadow-2xl">
+                        <div class="h-1/3 w-full overflow-hidden">
+                            <img src="img/prostetic.jpg" alt="" class="brightness-75">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">ProtoMante - Le service d'impression 3D pour les prototypes</h3>
+                            <p class="mt-2 text-lg font-akaya">
                                 Vous avez déjà un objet prêt à être imprimé mais vous n'avez pas d'imprimante 3D chez vous ? <br>
                                 Venez profiter de nos imprimantes 3D professionnelles en choisissant la matière et couleur de votre objet !
                             </p>
                         </div>
-                        <div class="menu-elmnt">
-                            <img src="img/stl.png" alt="icone fichier STL">
-                            <h3 class="text-center mt-3">CréaMante - Le coin des créateurs</h3>
-                            <p class="text-center mt-2">
+                    </div>
+                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg sm:w-1/4 my-2 sm:m-2 transition ease-in-out duration-500 hover:scale-105 hover:shadow-2xl">
+                        <div class="h-1/3 w-full overflow-hidden">
+                            <img src="img/frog.jpg" alt="icone fichier STL" class="brightness-75">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">CréaMante - Le coin des créateurs</h3>
+                            <p class="mt-2 text-lg font-akaya">
                                 Vous avez des connaissances en modélisation 3D et vous voulez vendre vos propore produits ? <br>
                                 Le coin CréaMante vous permets de créer une section eShop vous permettant de vendre vos modèles 3D ou mieux, donner la possibilité au plus grand nombre de personnes de faire imprimer vos objets par nos imprimantes 3D !
                             </p>
@@ -82,50 +125,86 @@
                 </div>
             </div>
         </div>
-        <div class="bg-green-2 ptb-5">
-            <div class="container">
-                <div class="section-pt">
-                    <img class="img-square" src="img/post-traitement.jpg" alt="image d'objets 3D avec post-traitement appliqué">
-                    <div class="section-pt__text">
-                        <h2 class="size-2 mb-3">Le post-traitement</h2>
-                        <p></p>
+
+        <!-- ImpriSearch section -->
+        <div class="container mx-auto px-3 py-20" id="ai">
+            <div class="flex items-center md:flex-row flex-col">
+                <video class="md:w-2/4 w-full md:mb-0 mb-8 rounded-2xl" src="videos/imprisearch.mp4" loop muted autoplay></video>
+                <div class="md:ml-8">
+                    <h2 class="mb-3 font-clutsy text-4xl font-semibold">Moteur de recherche propulsé par l'IA</h2>
+                    <p class="font-akaya text-xl">
+                        Trouvez tous ce dont vous avez besoin grâce à ImpriSearch, notre IA (Intelligence Artificielle) capable de rechercher et pré-personnaliser votre futur objet !
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-green1" id="values">
+            <div class="container mx-auto px-3 py-20">
+                <h2 class="text-center font-clutsy mb-3 text-4xl font-semibold">Nos valeurs qui nous motivent chaque jours</h2>
+                <div class="flex md:flex-row flex-col mt-4">
+                    <div class="md:w-1/3 w-full p-4">
+                        <img src="img/save-the-world.png" alt="icone développement durable" class="w-2/4 mx-auto">
+                        <h3 class="text-center font-clutsy text-2xl border-b-2 border-green3 mt-3 pb-2">Respectueux de l'environnement grâce à notre politique "1 commande, 1 impression"</h3>
+                        <p class="text-center mt-2 font-akaya text-lg">
+                            Grâce à la technologie de l'impression 3D, nous avons la flexibilité de construire votre objet personnalisé le jour même où vous passez commande,
+                            évitant ainsi les stocks et le gaspillage d'objets inutilisés !
+                        </p>
+                    </div>
+                    <div class="md:w-1/3 w-full p-4">
+                        <img src="img/coil.png" alt="icone bobine filament imprimante 3D" class="w-2/4 mx-auto">
+                        <h3 class="text-center font-clutsy text-2xl border-b-2 border-green3 mt-3 pb-2">Des matériaux recyclable et/ou biodégradable</h3>
+                        <p class="text-center mt-2 font-akaya text-lg">
+                            Nous nous efforçons à recycler les déchets plastiques sur place et nous les réutilisons afin de leurs donner une seconde vie (et il en va de-même pour la résine). <br>
+                            Nous vous proposons ainsi de faire imprimer vos objets avec des matériaux recyclable (et recyclé par nous-même) et/ou biodégradable, vous permettant de participer au bien-être de la planète !
+                        </p>
+                    </div>
+                    <div class="md:w-1/3 w-full p-4">
+                        <img src="img/france-heart.png" alt="icone drapeau de la France dans un cœur" class="w-2/4 mx-auto">
+                        <h3 class="text-center font-clutsy text-2xl border-b-2 border-green3 mt-3 pb-2">Fabrication 100% Française</h3>
+                        <p class="text-center mt-2 font-akaya text-lg">
+                            Une fabrication 100% Française, avec des matériaux recyclé en France !
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="ptb-5">
-            <div class="container">
-                <div class="section-values" id="values">
-                    <h2 class="text-center size-2 mb-3">Nos valeurs qui nous motivent chaque jours</h2>
-                    <div class="menu-icon mt-4">
-                        <div class="menu-elmnt">
-                            <img src="img/save-the-world.png" alt="icone développement durable">
-                            <h3 class="text-center mt-3">Respectueux de l'environnement grâce à notre politique "1 commande, 1 impression"</h3>
-                            <p class="text-center mt-2">
-                                Grâce à la technologie de l'impression 3D, nous avons la flexibilité de construire votre objet personnalisé le jour même où vous passez commande,
-                                évitant ainsi les stocks et le gaspillage d'objets inutilisés !
-                            </p>
-                        </div>
-                        <div class="menu-elmnt">
-                            <img src="img/coil.png" alt="icone bobine filament imprimante 3D">
-                            <h3 class="text-center mt-3">Des matériaux recyclable et/ou biodégradable</h3>
-                            <p class="text-center mt-2">
-                                Nous vous proposons de faire imprimer vos objets avec des matériaux recyclable et/ou biodégradable, vous permettant de participer au bien-être de la planète !
-                            </p>
-                        </div>
-                        <div class="menu-elmnt">
-                            <img src="img/france-heart.png" alt="icone drapeau de la France dans un cœur">
-                            <h3 class="text-center mt-3">Fabrication 100% Française</h3>
-                            <p class="text-center mt-2">
-                                Une fabrication 100% Française, avec des matériaux 100% Français !
-                            </p>
-                        </div>
-                    </div>
+
+        <!-- GDPR section -->
+        <div class="container mx-auto px-3 py-20" id="gdpr">
+            <div class="flex md:flex-row flex-col items-center">
+                <img class="md:w-2/4 w-full rounded-2xl md:mb-0 mb-8" src="img/cookies.jpg" alt="">
+                <div class="md:ml-8">
+                    <h2 class="font-clutsy text-4xl mb-3 font-semibold">Le Règlement Général sur la Protection des Données (RGPD)</h2>
+                    <p class="font-akaya text-xl">
+                        Nous accordons une importance crutial concernant la protection de vos données personnelles. C'est pourquoi nous enregistrons jamais sans votre accord vos différentes modélisations 3D pour alimenter notre IA (Intelligence Artificielle).
+                        <br>Nous accordons également une importance crutial quant à la transparence de l'utilisation de vos données personnelles.
+                    </p>
                 </div>
             </div>
         </div>
     </main>
-    <footer></footer>
+    <footer class="bg-green1" id="contact">
+        <div class="p-3 md:h-48 container mx-auto flex justify-between items-center flex-col md:flex-row">
+            <div class="md:w-1/3 w-full">
+                <img class="w-48" src="img/logo_imprimante_v2.png" alt="">
+                <p class="font-akaya mt-4">© 2024 ImpriMante Tous droits réservés</p>
+            </div>
+            <div class="md:w-1/3 w-full md:mt-0 mt-6">
+                <h3 class="font-clutsy text-2xl mb-1">Suivez-nous sur</h3>
+                <div class="flex text-2xl text-green3">
+                    <a class="" href="https://www.linkedin.com/company/impr1mante/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="ml-3" href="https://www.instagram.com/impr1mante/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="md:w-1/3 w-full md:mt-0 mt-6">
+                <h3 class="text-2xl font-clutsy mb-1">Contactez-moi</h3>
+                <a class="underline text-green3 font-akaya text-xl" href="mailto:contact.imprimante@gmail.com">contact.imprimante@gmail.com</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://kit.fontawesome.com/7e390a9640.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
