@@ -48,11 +48,10 @@
     </header>
     <main>
         <!-- Home -->
-        <div class="antialiased bg-gradient-to-br from-green1 to-green2">
-            <div class="container mx-auto px-3 py-16">
-                <img src="public/img/logo_imprimante_v2.png" alt="" class="sm:w-3/4 w-full mx-auto mt-72 mb-32">
-    
-                <h1 class="sm:text-5xl text-2xl font-semibold font-clutsy text-center mb-48">Achetez ce que vous ne trouvez nulle part !</h1>
+        <div class="antialiased bg-gradient-to-br from-green1 to-green2 h-screen">
+            <div class="flex flex-col justify-center items-center h-screen p-3">
+                <img src="public/img/logo_imprimante_v2.png" alt="" class="md:w-3/4 w-full mx-auto md:mb-32 mb-12">
+                <h1 class="sm:text-5xl text-2xl font-semibold font-clutsy text-center">Achetez ce que vous ne trouvez nulle part !</h1>
             </div>
         </div>
 
@@ -63,64 +62,74 @@
                 ImpriMante est une entreprise <span class="border-b-4 border-blue-500">Fra</span><span class="border-b-4 border-white">nça</span><span class="border-b-4 border-red-500">ise</span> de service d'impression 3D. Elle vous permets de concrétiser vos idées !<br>
                 Nous vous permettons de profiter de la technologie de l'impression 3D pour aquérir un objet <span class="border-b-4 border-green3">respectueux de l'environnement</span>, <span class="border-b-4 border-green3">personnalisé</span>, et surtout <span class="border-b-4 border-green3">fabriqué en France !</span>
             </p>
-            <div class="flex my-6">
+            <img class="mt-8 w-full mb-7 rounded-xl sm:w-3/4 mx-auto" src="public/img/3d_objects.webp" alt="">
+            <div class="flex mt-16">
                 <div class="w-1/3 h-1 bg-blue-500"></div>
                 <div class="w-1/3 h-1 bg-white"></div>
                 <div class="w-1/3 h-1 bg-red-500"></div>
             </div>
-            <img class="mt-3 w-full mb-7 rounded-xl sm:w-3/4 mx-auto" src="public/img/3d_objects.jpg" alt="">
         </div>
 
         <!-- Service section -->
         <div class="bg-green1" id="service">
             <div class="container mx-auto px-3 py-20">
                 <h2 class="text-center text-4xl mb-4 font-clutsy font-semibold">Nos différents services</h2>
+                <div class="mx-2 mb-8 mt-4">
+                    <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">Service d'impression 3D</h3>
+                    <p class="mt-2 text-lg font-akaya">
+                        Vous avez le choix de faire imprimer vos objets sur des imprimantes FDM (filaments plastiques), mais aussi sur des imprimantes SLA (résines) pour profiter d'une meilleure qualité d'impression !
+                    </p>
+                </div>
                 <div class="flex justify-between flex-col mt-4 sm:flex-row">
-                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg sm:w-1/4 my-2 sm:m-2 transition ease-in-out duration-500 hover:scale-105 hover:shadow-2xl">
-                        <div class="h-1/3 w-full overflow-hidden">
-                            <img src="public/img/printer.jpg" alt="" class="brightness-75">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">Service d'impression 3D</h3>
-                            <p class="mt-2 text-lg font-akaya">
-                                Vous avez le choix de faire imprimer vos objets sur des imprimantes FDM (filaments plastiques), mais aussi sur des imprimantes SLA (résines) pour profiter d'une meilleure qualité d'impression !
-                            </p>
-                        </div>
-                    </div>
-                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg sm:w-1/4 my-2 sm:m-2 transition ease-in-out duration-500 hover:scale-105 hover:shadow-2xl">
-                        <div class="h-1/3 w-full overflow-hidden">
-                            <img src="public/img/e-commerce.png" alt="" class="brightness-75">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">Large catalogue d'objets préconçue prêt à être personnalisé</h3>
-                            <p class="mt-2 text-lg font-akaya">
-                                Vous n'avez pas d'idée précise sur ce que vous voulez commander ? Pas de panique ! <br>
-                                Nous vous proposons un large catalogue d'objets préconçue, ne nécessitant plus que votre touche de personnalisation pour être parfait à vos yeux !
-                            </p>
+                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg md:w-1/3 my-2 md:m-2">
+                        <div class="flex flex-col">
+                            <div class="overflow-hidden">
+                                <img src="public/img/e-commerce.png" alt="" class="brightness-75 w-full h-60 object-cover">
+                            </div>
+                            <div class="p-4 h-2/3">
+                                <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">Large catalogue d'objets préconçue prêt à être personnalisé</h3>
+                                <p class="mt-2 text-lg font-akaya">
+                                    Vous n'avez pas d'idée précise sur ce que vous voulez commander ? Pas de panique ! <br>
+                                    Nous vous proposons un large catalogue d'objets préconçue, ne nécessitant plus que votre touche de personnalisation pour être parfait à vos yeux !
+                                </p>
+                                <div class="flex justify-end mt-4">
+                                    <a href="#" class="p-4 font-clutsy text-lg rounded-lg bg-gradient-to-br from-green1 to-green3">En savoir plus<i class="fa-solid fa-arrow-right ml-2"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg sm:w-1/4 my-2 sm:m-2 transition ease-in-out duration-500 hover:scale-105 hover:shadow-2xl">
-                        <div class="h-1/3 w-full overflow-hidden">
-                            <img src="public/img/prostetic.jpg" alt="" class="brightness-75">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">ProtoMante - Le service d'impression 3D pour les prototypes</h3>
-                            <p class="mt-2 text-lg font-akaya">
-                                Vous avez déjà un objet prêt à être imprimé mais vous n'avez pas d'imprimante 3D chez vous ? <br>
-                                Venez profiter de nos imprimantes 3D professionnelles en choisissant la matière et couleur de votre objet !
-                            </p>
+                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg md:w-1/3 my-2 md:m-2">
+                        <div class="flex flex-col">
+                            <div class="overflow-hidden">
+                                <img src="public/img/prostetic.webp" alt="" class="brightness-75 w-full h-60 object-cover">
+                            </div>
+                            <div class="p-4 h-2/3">
+                                <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">ProtoMante - Le service d'impression 3D pour les prototypes</h3>
+                                <p class="mt-2 text-lg font-akaya">
+                                    Vous avez déjà un objet prêt à être imprimé mais vous n'avez pas d'imprimante 3D chez vous ? <br>
+                                    Venez profiter de nos imprimantes 3D professionnelles en choisissant la matière et couleur de votre objet !
+                                </p>
+                                <div class="flex justify-end mt-4">
+                                    <a href="#" class="p-4 font-clutsy text-lg rounded-lg bg-gradient-to-br from-green1 to-green3">En savoir plus<i class="fa-solid fa-arrow-right ml-2"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg sm:w-1/4 my-2 sm:m-2 transition ease-in-out duration-500 hover:scale-105 hover:shadow-2xl">
-                        <div class="h-1/3 w-full overflow-hidden">
-                            <img src="public/img/frog.jpg" alt="icone fichier STL" class="brightness-75">
-                        </div>
-                        <div class="p-4">
-                            <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">CréaMante - Le coin des créateurs</h3>
-                            <p class="mt-2 text-lg font-akaya">
-                                Vous avez des connaissances en modélisation 3D et vous voulez vendre vos propore produits ? <br>
-                                Le coin CréaMante vous permets de créer une section eShop vous permettant de vendre vos modèles 3D ou mieux, donner la possibilité au plus grand nombre de personnes de faire imprimer vos objets par nos imprimantes 3D !
-                            </p>
+                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg md:w-1/3 my-2 md:m-2">
+                        <div class="flex flex-col">
+                            <div class="overflow-hidden">
+                                <img src="public/img/frog.jpg" alt="icone fichier STL" class="brightness-75 w-full h-60 object-cover">
+                            </div>
+                            <div class="p-4 h-2/3">
+                                <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">CréaMante - Le coin des créateurs</h3>
+                                <p class="mt-2 text-lg font-akaya">
+                                    Vous avez des connaissances en modélisation 3D et vous voulez vendre vos propore produits ? <br>
+                                    Le coin CréaMante vous permets de créer une section eShop vous permettant de vendre vos modèles 3D ou mieux, donner la possibilité au plus grand nombre de personnes de faire imprimer vos objets par nos imprimantes 3D !
+                                </p>
+                                <div class="flex justify-end mt-4">
+                                    <a href="#" class="p-4 font-clutsy text-lg rounded-lg bg-gradient-to-br from-green1 to-green3">En savoir plus<i class="fa-solid fa-arrow-right ml-2"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -174,9 +183,9 @@
         <!-- GDPR section -->
         <div class="container mx-auto px-3 py-20" id="gdpr">
             <div class="flex md:flex-row flex-col items-center">
-                <img class="md:w-2/4 w-full rounded-2xl md:mb-0 mb-8" src="public/img/cookies.jpg" alt="">
+                <img class="md:w-2/4 w-full rounded-2xl md:mb-0 mb-8" src="public/img/laptop_imprimante.webp" alt="">
                 <div class="md:ml-8">
-                    <h2 class="font-clutsy text-4xl mb-3 font-semibold">Le Règlement Général sur la Protection des Données (RGPD)</h2>
+                    <h2 class="font-clutsy text-4xl mb-3 font-semibold">Nous respectons votre vie privée</h2>
                     <p class="font-akaya text-xl">
                         Nous accordons une importance crutial concernant la protection de vos données personnelles. C'est pourquoi nous enregistrons jamais sans votre accord vos différentes modélisations 3D pour alimenter notre IA (Intelligence Artificielle).
                         <br>Nous accordons également une importance crutial quant à la transparence de l'utilisation de vos données personnelles.
