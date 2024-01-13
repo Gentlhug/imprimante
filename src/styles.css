@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-imprisearch-1{
+    background-image: url(../public/img/laptop_imprimante.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: brightness(.75);
+    height: 40rem;
+    -webkit-filter: brightness(.75);
+}
+
+.bg-wave-1{
+    background-image: url(../public/svg/wave.svg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.bg-wave-2{
+    background-image: url(../public/svg/wave_green1.svg);
+    background-position: bottom;
+    background-size: cover;
+}
