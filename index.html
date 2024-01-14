@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth box-border">
+<html lang="fr" class="scroll-smooth focus:scroll-auto">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,13 +58,64 @@
 
         <!-- About section -->
         <div class="bg-green1">
-            <div class="container mx-auto px-3 py-20 delay-[300ms] duration-[600ms] taos:translate-y-[200px] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="300" id="about">
+            <div class="container mx-auto px-3 py-20 overflow-hidden delay-[300ms] duration-[600ms] taos:translate-y-[200px] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="300" id="about">
                 <h2 class="font-clutsy text-4xl text-center font-semibold mb-4">Qui somme-nous ?</h2>
                 <p class="text-center font-akaya text-xl">
                     ImpriMante est une entreprise <span class="border-b-4 border-blue-500">Fra</span><span class="border-b-4 border-white">nça</span><span class="border-b-4 border-red-500">ise</span> de service d'impression 3D. Elle vous permets de concrétiser vos idées !<br>
                     Nous vous permettons de profiter de la technologie de l'impression 3D pour aquérir un objet <span class="border-b-4 border-green3">respectueux de l'environnement</span>, <span class="border-b-4 border-green3">personnalisé</span>, et surtout <span class="border-b-4 border-green3">fabriqué en France !</span>
                 </p>
-                <img class="mt-8 w-full mb-7 rounded-xl sm:w-3/4 mx-auto shadow-lg" src="public/img/3d_objects.webp" alt="">
+                <div class="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+                    <div class="-m-1 flex flex-wrap md:-m-2">
+                        <div class="flex w-1/3 flex-wrap">
+                            <div class="w-full p-1 md:p-2">
+                                <img
+                                    alt="gallery"
+                                    class="block h-full w-full rounded-xl shadow-lg object-cover object-center"
+                                    src="public/img/3d_objects.webp" />
+                            </div>
+                        </div>
+                        <div class="flex w-1/3 flex-wrap">
+                            <div class="w-full p-1 md:p-2">
+                                <img
+                                    alt="gallery"
+                                    class="block h-full w-full rounded-xl shadow-lg object-cover object-center"
+                                    src="public/img/masque_attach.webp" />
+                            </div>
+                        </div>
+                        <div class="flex w-1/3 flex-wrap">
+                            <div class="w-full p-1 md:p-2">
+                                <img
+                                    alt="gallery"
+                                    class="block h-full w-full rounded-xl shadow-lg object-cover object-center"
+                                    src="public/img/masque_attach_process.webp" />
+                            </div>
+                        </div>
+                        <div class="flex w-1/3 flex-wrap">
+                            <div class="w-full p-1 md:p-2">
+                                <img
+                                    alt="gallery"
+                                    class="block h-full w-full rounded-xl shadow-lg object-cover object-center"
+                                    src="public/img/support_airpods.webp" />
+                            </div>
+                        </div>
+                        <div class="flex w-1/3 flex-wrap">
+                            <div class="w-full p-1 md:p-2">
+                                <img
+                                    alt="gallery"
+                                    class="block h-full w-full rounded-xl shadow-lg object-cover object-center"
+                                    src="public/img/support_airpods_2.webp" />
+                            </div>
+                        </div>
+                        <div class="flex w-1/3 flex-wrap">
+                            <div class="w-full p-1 md:p-2">
+                                <img
+                                    alt="gallery"
+                                    class="block h-full w-full rounded-xl shadow-lg object-cover object-center"
+                                    src="public/img/support_airpods_3.webp" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="flex mt-16">
                     <div class="w-1/3 h-1 bg-blue-500"></div>
                     <div class="w-1/3 h-1 bg-white"></div>
@@ -74,7 +125,7 @@
         </div>
 
         <!-- Service section -->
-        <div class="bg-green1 bg-wave-1" id="service">
+        <div class="bg-green1 bg-wave-1 overflow-hidden" id="service">
             <div class="container mx-auto px-3 py-20">
                 <div class="delay-[300ms] duration-[600ms] taos:translate-y-[200px] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="300">
                     <h2 class="text-center text-4xl mb-4 font-clutsy font-semibold">Nos différents services</h2>
@@ -86,14 +137,14 @@
                     </div>
                 </div>
                 <div class="flex justify-between flex-col mt-4 sm:flex-row">
-                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg md:w-1/3 my-2 md:m-2 delay-[300ms] duration-[600ms] taos:translate-x-[-200px] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="400">
+                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg md:w-1/3 my-2 md:m-2 delay-[300ms] duration-[600ms] taos:scale-[0.6] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="400">
                         <div class="flex flex-col">
                             <div class="overflow-hidden">
                                 <img src="public/img/e-commerce.png" alt="" class="brightness-75 w-full h-60 object-cover">
                             </div>
                             <div class="p-4 h-2/3">
                                 <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">Large catalogue d'objets préconçue prêt à être personnalisé</h3>
-                                <p class="mt-2 text-lg font-akaya">
+                                <p class="mt-2 text-xl font-akaya">
                                     Vous n'avez pas d'idée précise sur ce que vous voulez commander ? Pas de panique ! <br>
                                     Nous vous proposons un large catalogue d'objets préconçue, ne nécessitant plus que votre touche de personnalisation pour être parfait à vos yeux !
                                 </p>
@@ -103,14 +154,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg md:w-1/3 my-2 md:m-2 delay-[300ms] duration-[600ms] taos:translate-y-[200px] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="300">
+                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg md:w-1/3 my-2 md:m-2 delay-[300ms] duration-[600ms] taos:scale-[0.6] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="400">
                         <div class="flex flex-col">
                             <div class="overflow-hidden">
                                 <img src="public/img/prostetic.webp" alt="" class="brightness-75 w-full h-60 object-cover">
                             </div>
                             <div class="p-4 h-2/3">
                                 <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">ProtoMante - Le service d'impression 3D pour les prototypes</h3>
-                                <p class="mt-2 text-lg font-akaya">
+                                <p class="mt-2 text-xl font-akaya">
                                     Vous avez déjà un objet prêt à être imprimé mais vous n'avez pas d'imprimante 3D chez vous ? <br>
                                     Venez profiter de nos imprimantes 3D professionnelles en choisissant la matière et couleur de votre objet !
                                 </p>
@@ -120,14 +171,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg md:w-1/3 my-2 md:m-2 delay-[300ms] duration-[600ms] taos:translate-x-[200px] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="400">
+                    <div class="w-full rounded-2xl bg-white overflow-hidden shadow-lg md:w-1/3 my-2 md:m-2 delay-[300ms] duration-[600ms] taos:scale-[0.6] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="400">
                         <div class="flex flex-col">
                             <div class="overflow-hidden">
                                 <img src="public/img/frog.jpg" alt="icone fichier STL" class="brightness-75 w-full h-60 object-cover">
                             </div>
                             <div class="p-4 h-2/3">
                                 <h3 class="font-clutsy text-2xl border-b-2 pb-2 border-green3">CréaMante - Le coin des créateurs</h3>
-                                <p class="mt-2 text-lg font-akaya">
+                                <p class="mt-2 text-xl font-akaya">
                                     Vous avez des connaissances en modélisation 3D et vous voulez vendre vos propore produits ? <br>
                                     Le coin CréaMante vous permets de créer une section eShop vous permettant de vendre vos modèles 3D ou mieux, donner la possibilité au plus grand nombre de personnes de faire imprimer vos objets par nos imprimantes 3D !
                                 </p>
@@ -142,7 +193,7 @@
         </div>
 
         <!-- ImpriSearch section -->
-        <div class="bg-green2 bg-wave-2">
+        <div class="bg-green2 bg-wave-2 overflow-hidden">
             <div class="container mx-auto px-3 py-20" id="ai">
                 <div class="flex items-center md:flex-row flex-col">
                     <video class="md:w-2/4 w-full md:mb-0 mb-8 rounded-2xl shadow-lg delay-[300ms] duration-[600ms] taos:[transform:translate3d(-200px,200px,0)] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="400" src="public/videos/imprisearch.mp4" loop muted autoplay></video>
@@ -161,13 +212,13 @@
 
         <!-- Les valeurs de l'entreprise -->
         <div class="antialiased bg-gradient-to-b from-green1 to-green2" id="values">
-            <div class="container mx-auto px-3 py-20 delay-[300ms] duration-[600ms] taos:translate-y-[200px] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="300">
+            <div class="container mx-auto px-3 py-20 overflow-hidden delay-[300ms] duration-[600ms] taos:translate-y-[200px] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="300">
                 <h2 class="text-center font-clutsy mb-3 text-4xl font-semibold">Nos valeurs qui nous motivent chaque jours</h2>
                 <div class="flex md:flex-row flex-col mt-4">
                     <div class="md:w-1/3 w-full p-4">
                         <img src="public/img/save-the-world.png" alt="icone développement durable" class="w-2/4 mx-auto">
                         <h3 class="text-center font-clutsy text-2xl border-b-2 border-green3 mt-3 pb-2">Respectueux de l'environnement grâce à notre politique "1 commande, 1 impression"</h3>
-                        <p class="text-center mt-2 font-akaya text-lg">
+                        <p class="text-center mt-2 font-akaya text-xl">
                             Grâce à la technologie de l'impression 3D, nous avons la flexibilité de construire votre objet personnalisé le jour même où vous passez commande,
                             évitant ainsi les stocks et le gaspillage d'objets inutilisés !
                         </p>
@@ -175,7 +226,7 @@
                     <div class="md:w-1/3 w-full p-4">
                         <img src="public/img/coil.png" alt="icone bobine filament imprimante 3D" class="w-2/4 mx-auto">
                         <h3 class="text-center font-clutsy text-2xl border-b-2 border-green3 mt-3 pb-2">Des matériaux recyclable et/ou biodégradable</h3>
-                        <p class="text-center mt-2 font-akaya text-lg">
+                        <p class="text-center mt-2 font-akaya text-xl">
                             Nous nous efforçons à recycler les déchets plastiques sur place et nous les réutilisons afin de leurs donner une seconde vie (et il en va de-même pour la résine). <br>
                             Nous vous proposons ainsi de faire imprimer vos objets avec des matériaux recyclable (et recyclé par nous-même) et/ou biodégradable, vous permettant de participer au bien-être de la planète !
                         </p>
@@ -183,7 +234,7 @@
                     <div class="md:w-1/3 w-full p-4">
                         <img src="public/img/france-heart.png" alt="icone drapeau de la France dans un cœur" class="w-2/4 mx-auto">
                         <h3 class="text-center font-clutsy text-2xl border-b-2 border-green3 mt-3 pb-2">Fabrication 100% Française</h3>
-                        <p class="text-center mt-2 font-akaya text-lg">
+                        <p class="text-center mt-2 font-akaya text-xl">
                             Une fabrication 100% Française, avec des matériaux recyclé en France !
                         </p>
                     </div>
@@ -191,15 +242,17 @@
             </div>
 
             <!-- GDPR section -->
-            <div class="container mx-auto px-3 py-20" id="gdpr">
-                <div class="flex md:flex-row flex-col items-center">
-                    <img class="md:w-2/4 w-full rounded-2xl md:mb-0 mb-8 shadow-lg delay-[300ms] duration-[600ms] taos:translate-x-[-200px] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="400" src="public/img/laptop_imprimante.webp" alt="">
-                    <div class="md:ml-8 delay-[300ms] duration-[600ms] taos:translate-x-[200px] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="400">
-                        <h2 class="font-clutsy text-4xl mb-3 font-semibold">Nous respectons votre vie privée</h2>
-                        <p class="font-akaya text-xl">
-                            Nous accordons une importance crutial concernant la protection de vos données personnelles. C'est pourquoi nous enregistrons jamais sans votre accord vos différentes modélisations 3D pour alimenter notre IA (Intelligence Artificielle).
-                            <br>Nous accordons également une importance crutial quant à la transparence de l'utilisation de vos données personnelles.
-                        </p>
+            <div class="overflow-hidden">
+                <div class="container mx-auto px-3 py-20" id="gdpr">
+                    <div class="flex md:flex-row flex-col items-center">
+                        <img class="md:w-2/4 w-full rounded-2xl md:mb-0 mb-8 shadow-lg delay-[300ms] duration-[600ms] taos:translate-x-[-200px] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="400" src="public/img/laptop_imprimante.webp" alt="">
+                        <div class="md:ml-8 delay-[300ms] duration-[600ms] taos:translate-x-[200px] [animation-iteration-count:infinite] taos:opacity-0" ata-taos-offset="400">
+                            <h2 class="font-clutsy text-4xl mb-3 font-semibold">Nous respectons votre vie privée</h2>
+                            <p class="font-akaya text-xl">
+                                Nous accordons une importance crutial concernant la protection de vos données personnelles et l'intégrité de celles-ci. C'est pourquoi nous enregistreront jamais sans votre accord vos différents projets 3D pour alimenter notre IA (Intelligence Artificielle).
+                                <br>Nous accordons également une importance quant à la transparence de l'utilisation de vos données personnelles.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
