@@ -987,6 +987,14 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   font-family: Clutsy;
 }
 
+.font-montserrat {
+  font-family: Montserrat Alternates;
+}
+
+.font-sen {
+  font-family: Sen;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1010,6 +1018,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-semibold {

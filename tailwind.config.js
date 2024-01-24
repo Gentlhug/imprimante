@@ -311,6 +311,8 @@ module.exports = {
     fontFamily: {
       clutsy: "Clutsy",
       akaya: "Akaya Telivigala",
+      sen: "Sen",
+      montserrat: "Montserrat Alternates",
       sans: [
         'ui-sans-serif',
         'system-ui',
